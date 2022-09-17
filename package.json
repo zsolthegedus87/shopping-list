@@ -1,0 +1,23 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "description": "Simple shopping list with localStorage",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsolthegedus87/shopping-list.git"
+  },
+  "author": "HZS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zsolthegedus87/shopping-list/issues"
+  },
+  "homepage": "https://github.com/zsolthegedus87/shopping-list#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list - localStorage - OOP</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body id="shopping-list" class="shopping-list">
+<div class="columns is-mobile is-centered">
+    <div class="column is-two-fifths">
+        <h1 class="title">Shopping list</h1>
+    </div>
+</div>
+<div class="columns is-mobile is-centered">
+    <div class="column is-two-fifths">
+        <div class="card">
+            <div class="card-content">
+                <div class="content shopping-list__content">
+                    <ul class="shopping-list__list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="columns is-mobile is-centered">
+    <div class="column is-two-fifths">
+        <div class="field">
+            <label class="label" for="product">Add product</label>
+            <div class="control">
+                <input class="input shopping-list__add" id="product" type="text" placeholder="add product"/>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control shopping-list__button-container">
+                <button class="button is-link shopping-list__button">Add</button>
+                <p class="error-message"></p>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control shopping-list__button-container">
+                <button class="button is-link is-light shopping-list__checked">Remove all checked item</button>
+                <p class="error-message-checked"></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script defer src="./script.js"></script>
+<style>
+    ul.shopping-list__list {
+        list-style-type: none;
+    }
+
+    .done {
+        text-decoration: line-through;
+    }
+</style>
+</html>
